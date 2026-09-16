@@ -5,24 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "91.186.218.227",
-      "server_port": 4443,
-      "uuid": "e26ac108-8406-47d6-978f-be02401d0bc6",
+      "tag": "🇦🇱 AL 01 - xiaohe",
+      "server": "gyh.manliclouc.ir",
+      "server_port": 44811,
+      "uuid": "89418511-64f9-4e74-ac6b-ffc1b828106f",
       "tls": {
         "enabled": true,
-        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
-        "insecure": false,
+        "server_name": "app.stiga.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5V9UBM3WxVbCvEwW-FOxiBKlQTdMR9aScIfy53zefzM",
+          "short_id": "b53a4597ec327aec"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
