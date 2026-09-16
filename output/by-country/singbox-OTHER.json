@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.20.30.10",
+      "server": "104.25.30.10",
       "server_port": 443,
-      "uuid": "91d28760-ecf1-450b-9170-d310111a0e6d",
+      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
       "tls": {
         "enabled": true,
-        "server_name": "us9.69lover.my",
+        "server_name": "de14.69lover.my",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,28 +23,29 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v2/63e9687fa53e441c/stream",
+        "path": "/api/v2/6c316c769ad6853c/stream",
         "headers": {
-          "Host": "us9.69lover.my"
+          "Host": "de14.69lover.my"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "104.20.30.10",
-      "server_port": 443,
-      "uuid": "91d28760-ecf1-450b-9170-d310111a0e6d",
+      "server": "104.21.91.53",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "us9.69lover.my",
+        "server_name": "v2ray1.dozapp.xyz",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v2/63e9687fa53e441c/stream",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "us9.69lover.my"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
