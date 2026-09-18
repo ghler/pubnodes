@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 13.207.151.141
+  server: 35.154.58.87
   port: 443
   udp: true
   type: hysteria2
@@ -25,7 +25,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 35.154.58.87
+  server: 13.207.151.141
   port: 443
   udp: true
   type: hysteria2
@@ -33,18 +33,29 @@ proxies:
   sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 148.113.5.44
-  port: 443
+  server: preview.netraidly.ru
+  port: 40443
   udp: true
   type: vless
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
+  servername: deepl.com
   client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 05 - xiaohe
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +65,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
+  - 🇮🇳 印度 (India) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +75,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
+  - 🇮🇳 印度 (India) 05 - xiaohe
 rules:
 - MATCH,PROXIES
