@@ -4,16 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 34.15.162.1
+- name: 🇶🇦 卡塔尔 (Qatar) 01 - xiaohe
+  server: 34.18.31.5
   port: 443
   udp: true
   type: vless
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
   tls: true
   reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-    short-id: ca672c53fbbac555
+    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
+    short-id: 9c8748aa3f7d4219
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇶🇦 卡塔尔 (Qatar) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇶🇦 卡塔尔 (Qatar) 01 - xiaohe
 rules:
 - MATCH,PROXIES

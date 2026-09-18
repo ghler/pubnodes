@@ -14,15 +14,18 @@ proxies:
   ws-opts:
     path: /
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: neth9.lunariai.ru
-  port: 8443
+  server: 144.31.50.236
+  port: 443
   udp: true
   type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
   tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: firefox
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   server: 193.148.59.178
   port: 443
@@ -37,29 +40,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  server: 144.31.50.236
-  port: 443
+  server: neth9.lunariai.ru
+  port: 8443
   udp: true
   type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  flow: xtls-rprx-vision
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   tls: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  server: 87.120.196.212
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5561acfb-0adc-4c76-bfbf-767a76c7cbf0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: holo-stream.videocactus.xyz
+  servername: neth9.lunariai.ru
   skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,7 +57,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,6 +66,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
 rules:
 - MATCH,PROXIES

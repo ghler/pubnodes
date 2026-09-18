@@ -6,46 +6,30 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "64.225.110.247",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "server": "103.175.79.4",
+      "server_port": 8443,
+      "uuid": "b2141c97-76af-ff6f-839b-70a53e23aad9",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
+        "server_name": "download.autodesk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "92KJ-ibs1qTy8nODGrHTW8T0b_trG7McLYv8My9o2EE",
+          "short_id": ""
+        }
       },
       "transport": {
-        "type": "ws",
-        "path": "/acg/buy/ajax",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-      "server": "185.126.67.44",
-      "server_port": 1932,
-      "uuid": "bae8d9ba-9f5d-4802-bb5e-bc0956a472d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
       "server": "185.126.67.60",
       "server_port": 443,
       "uuid": "8ff62004-b728-4be5-b7e9-5f5c85489921",
@@ -66,6 +50,27 @@
     },
     {
       "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
+      "server": "185.126.67.44",
+      "server_port": 1932,
+      "uuid": "bae8d9ba-9f5d-4802-bb5e-bc0956a472d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe",
       "server": "156.226.168.221",
       "server_port": 35193,
@@ -76,7 +81,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
