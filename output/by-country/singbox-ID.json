@@ -6,23 +6,20 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "188.114.97.6",
+      "server": "34.128.66.66",
       "server_port": 443,
-      "uuid": "1246e51a-97cd-4d5c-9842-76dd3420bbe2",
+      "uuid": "e440fa81-fe9d-4ca1-b711-f7b72c3d79ed",
       "tls": {
         "enabled": true,
-        "server_name": "investor.fb.com.r3xxe.eu.cc",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/id-tksi",
-        "headers": {
-          "Host": "investor.fb.com.r3xxe.eu.cc"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-9nhbWBjFTNIE5q0kg76hjyzCS2giPfZ-fbd8xvmRX0",
+          "short_id": "409192cee72716d7"
         }
       }
     },

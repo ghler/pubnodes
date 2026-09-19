@@ -5,20 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  server: 188.114.97.6
+  server: 34.128.66.66
   port: 443
   udp: true
   type: vless
-  uuid: 1246e51a-97cd-4d5c-9842-76dd3420bbe2
+  uuid: e440fa81-fe9d-4ca1-b711-f7b72c3d79ed
   tls: true
-  servername: investor.fb.com.r3xxe.eu.cc
-  skip-cert-verify: false
+  reality-opts:
+    public-key: -9nhbWBjFTNIE5q0kg76hjyzCS2giPfZ-fbd8xvmRX0
+    short-id: 409192cee72716d7
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: investor.fb.com.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
