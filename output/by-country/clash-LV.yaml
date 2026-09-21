@@ -18,18 +18,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: sql.popmintxo.cc
+  server: 104.25.217.189
   port: 443
   udp: true
   type: vless
-  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
-  flow: xtls-rprx-vision
+  uuid: 7a657573-627d-c5d7-4e7b-9e260f5cfff1
   tls: true
-  reality-opts:
-    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
-    short-id: b558b9305a0b
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  servername: imzajnekupas.a3-60-morteza.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/9e260f5cfff1/loc-0
+    headers:
+      Host: imzajnekupas.a3-60-morteza.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
