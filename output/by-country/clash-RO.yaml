@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 185.156.44.99
-  port: 443
+  server: 85.204.107.184
+  port: 8443
   udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   server: 46.28.67.55
@@ -26,13 +26,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 85.204.107.172
-  port: 8443
+  server: 193.163.203.253
+  port: 443
   udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
+  type: vless
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+  servername: yandex.ru
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: 146.70.124.85
   port: 443
@@ -56,19 +61,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  server: 193.163.203.253
-  port: 443
-  udp: true
-  type: vless
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-  servername: yandex.ru
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,7 +71,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,6 +81,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
 rules:
 - MATCH,PROXIES
