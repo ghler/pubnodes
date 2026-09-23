@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "194.93.61.100",
+      "server": "alda2.thewalkingded.life",
       "server_port": 443,
-      "uuid": "41e71ba7-d389-47aa-94f7-ed1f55fdbcdf",
+      "uuid": "f495298f-2bdb-4fd8-9ac9-5dd33d1b482a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdnjs.com",
+        "server_name": "alda2.thewalkingded.life",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "E1te_g9q6EWQVOCgjwI4PF-cml9qqW7OEAf33tYkUxQ",
-          "short_id": "17d334ad29b2ff40"
+          "public_key": "FHz8UphJsAywB1sIO6G1zEsSyxhkWifNN364wJE6bQU",
+          "short_id": "79b420e34e67b356"
         }
       }
     },
