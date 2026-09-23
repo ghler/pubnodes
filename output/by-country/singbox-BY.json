@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "alda2.thewalkingded.life",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
+      "server": "144.31.129.19",
       "server_port": 443,
-      "uuid": "f495298f-2bdb-4fd8-9ac9-5dd33d1b482a",
+      "uuid": "e950cb84-4d46-44f8-ba9a-e6064e7ec2a4",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "alda2.thewalkingded.life",
+        "server_name": "media-crown.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FHz8UphJsAywB1sIO6G1zEsSyxhkWifNN364wJE6bQU",
-          "short_id": "79b420e34e67b356"
+          "public_key": "gF0oeN2ndJ1hDZynSUu504hiXzUI6oioEerdyG7yMVQ",
+          "short_id": "d9662905"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

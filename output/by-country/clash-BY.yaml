@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 希腊 (Greece) 01 - xiaohe
-  server: 85.90.197.220
+- name: 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
+  server: 144.31.129.19
   port: 443
   udp: true
   type: vless
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  uuid: e950cb84-4d46-44f8-ba9a-e6064e7ec2a4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+    public-key: gF0oeN2ndJ1hDZynSUu504hiXzUI6oioEerdyG7yMVQ
+    short-id: d9662905
+  servername: media-crown.ru
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 (Greece) 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
 rules:
 - MATCH,PROXIES
